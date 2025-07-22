@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hindu Calendar 2025</title>
+    <link rel="stylesheet" src="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="nav-controls">
+                <button class="nav-btn" id="prev-month">‹</button>
+                <button class="nav-btn" id="next-month">›</button>
+            </div>
+            <div class="month-year" id="month-year"></div>
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="en">English</button>
+                <button class="lang-btn" data-lang="mr">मराठी</button>
+                <button class="lang-btn" data-lang="kn">ಕನ್ನಡ</button>
+            </div>
+        </div>
+
+        <div class="calendar-info">
+            <div class="today-info" id="today-info"></div>
+        </div>
+
+        <div class="calendar-wrapper">
+            <div class="calendar-grid" id="calendar-grid">
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup -->
+    <div class="popup" id="event-popup">
+        <div class="popup-content">
+            <button class="popup-close" id="popup-close">×</button>
+            <h3 id="popup-title"></h3>
+            <div id="popup-details"></div>
+        </div>
+    </div>
+<script src="main.js"></script>
+</body>
+</html>
